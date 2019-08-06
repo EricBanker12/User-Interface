@@ -64,3 +64,123 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    width: 876px;
+    min-width: 900px;
+    margin: 0 auto;
+}
+
+address, p {
+    line-height: 1.15;
+}
+
+/* nav header */
+
+header {
+    position: relative;
+    margin-top: 25px;
+    font-size: 14px;
+    height: 36px;
+}
+
+header nav {
+    display: inline-block;
+    width: 700px;
+    height: 36px;
+    vertical-align: top;
+    line-height: 36px;
+}
+
+header a {
+    color:#bbb;
+    margin-right: 66px;
+}
+
+header a:last-child {
+    margin-right: unset;
+}
+
+header img {
+    position: absolute;
+    right: 0;
+}
+
+/* banner section */
+
+#banner {
+    position: relative;
+    height: 530px;
+    padding-top: 120px;
+    border-bottom: 1px solid black;
+}
+
+#banner img {
+    position: absolute;
+    right: 0;
+    margin-top: -60px;
+}
+
+.no-margin {margin:0}
+
+h1 {
+    font-size: 75px;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 18px;
+    width: 174px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: black;
+}
+
+/* content section */
+
+#content div {
+    margin: 36px 0;
+}
+
+.half-width {
+    display: inline-block;
+    width: 49.5%;
+}
+
+.third-width {
+    display: inline-block;
+    width: 32%;
+}
+
+.middle {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+/* footer */
+
+footer {
+    border-top: 1px solid black;
+    padding: 40px 0;
+    margin-top: 10px;
+    margin-bottom: 75px;
+}
+
+footer address, footer p {
+    margin-bottom: 1em;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 3em;
+    font-size: 14px;
+}
