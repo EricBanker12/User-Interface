@@ -82,10 +82,13 @@ address, p {
 /* nav header */
 
 header {
-    position: relative;
-    margin-top: 25px;
+    position: fixed; /* stretch goal #1 */
+    width: 100%;
+    padding-top: 25px;
     font-size: 14px;
-    height: 36px;
+    height: 61px; 
+    background-color: white;
+    z-index: 2;
 }
 
 header nav {
@@ -106,8 +109,28 @@ header a:last-child {
 }
 
 header img {
-    position: absolute;
-    right: 0;
+    /* position: absolute;
+    right: 0; */
+    margin-left: 20px; /* stretch goal #1, can't use absolute inside fixed */
+}
+
+/* stretch goal #2 */
+header a {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+}
+
+/* stretch goal #5 */
+nav a:hover {
+    animation-duration: 2s;
+    animation-name: colorful;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorful {
+    33% {color: #FF0000}
+    66% {color: #00FF00}
+    100% {color: #0000FF}
 }
 
 /* banner section */
@@ -115,7 +138,7 @@ header img {
 #banner {
     position: relative;
     height: 530px;
-    padding-top: 120px;
+    padding-top: 170px;
     border-bottom: 1px solid black;
 }
 
@@ -143,6 +166,17 @@ h1 {
     line-height: 34px;
     text-align: center;
     color: black;
+}
+
+/* stretch goal #5 */
+div:hover .button {
+    animation-duration: 1s;
+    animation-name: spin;
+}
+      
+@keyframes spin {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
 }
 
 /* content section */
